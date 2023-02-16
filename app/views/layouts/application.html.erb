@@ -25,9 +25,15 @@
         <%# <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a> %> 
         <a class="nav-link" <%= link_to "Accueil", "/"  %><span class="sr-only">(current)</span></a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ragots</a>
+       
+          
+          <li class="nav-item">
+          <%#   <a class="nav-link" href="#"> Liste des Ragots</a> %>
+          <a class="nav-link"  <%= link_to "Liste des Ragots", "/" %>          </a>
+
         </li>
+       
+        
         <li class="nav-item">
           <a class="nav-link" <%= link_to "Nouveau ragot", new_gossip_path  %>    </a>
         </li>

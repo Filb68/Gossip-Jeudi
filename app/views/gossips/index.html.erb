@@ -9,15 +9,16 @@
 </ul>
 
 
-<h1>Les ragots liés à leur page</h1>
+
+
+<h1>Les ragots liés à leur page et signés de leur auteur</h1>
 
 <ul>
   <% @gossips.each do |gossip| %>
     <li>
-    <%= link_to gossip.title, gossip_path(gossip) %> 
+    <p> <%= link_to gossip.title, gossip_path(gossip) %> par <%= gossip.user.first_name %> <%= gossip.user.last_name %> <p>
+
     </li>
   <% end %>
 </ul>
-
-
 
