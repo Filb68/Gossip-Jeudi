@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Je ne suis pas allé très loin.
+En plus, j'ai fait un bouton d'enregistrement dans la navbar dans une version ultérieure... mais j'ai perdu toutes les données de la BDD. Alors j'ai préfére ne pas uploader.
+Ca peut être un bonus à regarder en streaming, on va dire.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
