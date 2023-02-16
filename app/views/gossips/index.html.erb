@@ -1,0 +1,23 @@
+<h1>Les ragots</h1>
+
+<ul>
+  <% @gossips.each do |gossip| %>
+    <li>
+      <%= gossip.title %>
+    </li>
+  <% end %>
+</ul>
+
+
+<h1>Les ragots liés à leur page</h1>
+
+<ul>
+  <% @gossips.each do |gossip| %>
+    <li>
+    <%= link_to gossip.title, gossip_path(gossip) %> 
+    </li>
+  <% end %>
+</ul>
+
+
+

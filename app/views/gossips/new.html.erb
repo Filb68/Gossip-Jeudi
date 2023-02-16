@@ -1,0 +1,19 @@
+<h1>Création d'un beau ragot</h1>
+
+<%= form_with model: @gossips do |form| %>
+    <div>
+      <%= form.label :titre %><br>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div>
+      <%= form.label :contenu %><br>
+      <%= form.text_area :content %>
+    </div>
+  
+    <div>
+   
+
+    <%= form.submit %>
+    </div>
+  <% end %>
