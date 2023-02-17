@@ -30,13 +30,21 @@
           <li class="nav-item">
           <%#   <a class="nav-link" href="#"> Liste des Ragots</a> %>
           <a class="nav-link"  <%= link_to "Liste des Ragots", "/" %>          </a>
+          </li>
 
-        </li>
        
         
         <li class="nav-item">
           <a class="nav-link" <%= link_to "Nouveau ragot", new_gossip_path  %>    </a>
         </li>
+
+        <li class="nav-item">
+        <%#   <a class="nav-link" href="#"> Liste des Ragots</a> %>
+        <a class="nav-link"  <%= link_to "Enregistrement", "/sign_up" %>          </a>
+        </li>
+
+
+      
         
           </div>
         </li>
@@ -52,3 +60,10 @@
     <%= yield %>
   </body>
 </html>
+
+
+
+
+
+
+
