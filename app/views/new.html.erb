@@ -1,0 +1,36 @@
+<h1> Sign Up - Enregistrement </h1>
+
+<%= form_with model: @user, url: sign_up_path do |form|%>
+    
+    <% if @user.errors.any? %>
+    <div class="alert alert-danger">
+        <% @user.errors.full_messages.each do |message| %> 
+            <div> <%= message %>  </div>
+        <% end %>
+    </div>
+    <% end %>
+
+    
+ 
+
+
+
+    <div class="mb-3">
+        <%= form.label :Courriel %> 
+        <%= form.text_field :email, placeholder:"  steve@apple.com" %> 
+    </div>
+    <div class="mb-3">
+        <%= form.label :"Mot de passe" %> 
+        <%= form.password_field :password,  placeholder:" Le mot de passe" %> 
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :"Confirmation du mot de passe" %> 
+        <%= form.password_field :password_confirmation,  placeholder:"  le même !" %> 
+    </div>
+
+    <div class="btn btn-primary" >
+        <%= form.submit "Je fonce" %> 
+    </div>
+
+ <% end %> 
