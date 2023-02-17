@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   # get 'index/new'
   # get 'index/create'
   root 'gossips#index' # à la place de 'index#index'
+    get "sign_up", to:"registrations#new"
+  post "sign_up", to: "registrations#create"
+  
   resources :gossips 
   
   
